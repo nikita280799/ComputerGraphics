@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labs.lab10.Lab10SceneController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="622.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Фильтр 3x3" />
+                        <FlowPane prefHeight="22.0" prefWidth="187.0">
+                           <children>
+                              <TextField fx:id="f3t1" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t2" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t3" layoutX="40.0" layoutY="10.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t4" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t5" layoutX="40.0" layoutY="10.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t6" layoutX="70.0" layoutY="10.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t7" layoutX="10.0" layoutY="41.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t8" layoutX="40.0" layoutY="41.0" prefHeight="28.0" prefWidth="30.0" />
+                              <TextField fx:id="f3t9" layoutX="70.0" layoutY="41.0" prefHeight="28.0" prefWidth="30.0" />
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ToggleButton fx:id="tb3" mnemonicParsing="false" text="3x3" />
+                              <ToggleButton fx:id="tb5" mnemonicParsing="false" text="5x5" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="findimage" mnemonicParsing="false" text="Загрузить" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="130.0" prefWidth="141.0">
+                     <children>
+                        <Label text="Фильтр 5x5" />
+                        <FlowPane prefHeight="62.0" prefWidth="124.0">
+                           <children>
+                              <TextField fx:id="f5t1" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t2" layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t3" layoutX="66.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t4" layoutX="66.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t5" layoutX="94.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t6" layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t7" layoutX="38.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t8" layoutX="66.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t9" layoutX="94.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t10" layoutX="122.0" layoutY="10.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t11" layoutX="10.0" layoutY="41.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t12" layoutX="122.0" layoutY="103.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t13" layoutX="38.0" layoutY="41.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t14" layoutX="66.0" layoutY="41.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t15" layoutX="94.0" layoutY="41.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t16" layoutX="122.0" layoutY="41.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t17" layoutX="10.0" layoutY="72.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t18" layoutX="38.0" layoutY="72.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t19" layoutX="66.0" layoutY="72.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t20" layoutX="94.0" layoutY="72.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t21" layoutX="122.0" layoutY="72.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t22" layoutX="10.0" layoutY="103.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t23" layoutX="38.0" layoutY="103.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t24" layoutX="66.0" layoutY="103.0" prefHeight="9.0" prefWidth="28.0" />
+                              <TextField fx:id="f5t25" layoutX="94.0" layoutY="103.0" prefHeight="9.0" prefWidth="28.0" />
+
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="286.0" prefWidth="318.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Исходное изображение">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <ImageView fx:id="imview1" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="286.0" prefWidth="304.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" text="Отфильтрованное изображение">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <ImageView fx:id="imview2" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+               </children></HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
