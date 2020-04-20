@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labs.lab13.SecondSceneController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas" height="202.0" width="258.0" />
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="clearBut" mnemonicParsing="false" text="Очистить" />
+                  <Button fx:id="preViewBut" mnemonicParsing="false" text="Предпросмотр" />
+               </children>
+            </HBox>
+            <BarChart fx:id="chart" prefHeight="300.0" prefWidth="400.0">
+              <xAxis>
+                <CategoryAxis fx:id="catAxis" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="applyBut" mnemonicParsing="false" text="Применить для" />
+                   <ChoiceBox fx:id="choiceBox" value="4 точки">
+                       <items>
+                           <FXCollections fx:factory="observableArrayList">
+                               <String fx:value="red" />
+                               <String fx:value="green" />
+                               <String fx:value="blue" />
+                           </FXCollections>
+                       </items>
+                   </ChoiceBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labs.lab13.Lab13SceneController">
+   <children>
+      <HBox>
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="loadBut" alignment="TOP_LEFT" mnemonicParsing="false" text="Загрузить изображение" />
+                        <ImageView fx:id="imView" disable="true" fitHeight="500.0" fitWidth="885.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="changeHistBut" mnemonicParsing="false" text="Изменить гистограмму" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <BarChart fx:id="redchart" categoryGap="0.0" prefHeight="300.0" prefWidth="380.0" title="red">
+                          <xAxis>
+                            <CategoryAxis fx:id="redCatAxis" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="redNumAxis" />
+                          </yAxis>
+                        </BarChart>
+                        <BarChart fx:id="bluechart" categoryGap="0.0" prefHeight="300.0" prefWidth="380.0" title="blue">
+                           <xAxis>
+                              <CategoryAxis fx:id="blueCatAxis" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <BarChart fx:id="greenchart" categoryGap="0.0" prefHeight="300.0" prefWidth="380.0" title="green">
+                           <xAxis>
+                              <CategoryAxis fx:id="greenCatAxis" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <BarChart fx:id="genchart" categoryGap="0.0" prefHeight="300.0" prefWidth="380.0" title="all">
+                           <xAxis>
+                              <CategoryAxis fx:id="genCatAxis" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

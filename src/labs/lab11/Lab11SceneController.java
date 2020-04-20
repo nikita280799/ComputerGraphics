@@ -55,12 +55,10 @@ public class Lab11SceneController {
     private void overlayImage(Image im1, Image im2, int percent) {
         PixelReader pr1 = im1.getPixelReader();
         PixelReader pr2 = im2.getPixelReader();
-
         double w = Math.min(im1.getWidth(), im2.getWidth());
         double h = Math.min(im1.getHeight(), im2.getHeight());
         WritableImage img = new WritableImage((int) w, (int) h);
         PixelWriter pw = img.getPixelWriter();
-
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
                 double k = (double) percent / 100;
